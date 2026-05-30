@@ -259,18 +259,75 @@
       "alignment": "Knowledge Management",
       "date": "2026-02-15",
       "description": "Archiving traditional governance models."
+    },
+    {
+      "id": "RD-001",
+      "code": "RD-001",
+      "project": "Guurti Committee on Red Sea Security & Maritime Strategy",
+      "amount": 8000000,
+      "donor": "Israel / Regional Security",
+      "category": "Strategic Defense",
+      "status": "Drafting",
+      "priority": "Critical",
+      "alignment": "Red Sea Stability",
+      "date": "2026-05-25",
+      "description": "Legislative oversight of coastal defense, intelligence sharing agreements, and port security."
+    },
+    {
+      "id": "RD-002",
+      "code": "RD-002",
+      "project": "Cybersecurity & Digital Sovereignty Authority",
+      "amount": 10000000,
+      "donor": "Bilateral Tech Funds (Israel)",
+      "category": "Digital Public Infrastructure",
+      "status": "Concept Note",
+      "priority": "High",
+      "alignment": "Cyber Resilience",
+      "date": "2026-06-01",
+      "description": "Establishing the legal framework and infrastructure for national cybersecurity, leveraging Israeli cyber expertise."
+    },
+    {
+      "id": "RD-003",
+      "code": "RD-003",
+      "project": "National Water Security & Desalination Legislative Framework",
+      "amount": 5000000,
+      "donor": "MASHAV / Climate Funds",
+      "category": "Climate Resilience",
+      "status": "Drafting",
+      "priority": "High",
+      "alignment": "Agri-Tech / Water Security",
+      "date": "2026-06-15",
+      "description": "Drafting the regulatory environment for large-scale Israeli agri-tech and desalination FDI."
+    },
+    {
+      "id": "RD-004",
+      "code": "RD-004",
+      "project": "Somaliland-Israel Joint Economic & Trade Commission",
+      "amount": 3000000,
+      "donor": "Bilateral Trade Mechanisms",
+      "category": "Economic Diplomacy",
+      "status": "Proposal Stage",
+      "priority": "Medium",
+      "alignment": "FDI Facilitation",
+      "date": "2026-07-01",
+      "description": "Parliamentary oversight and facilitation of new trade agreements in fisheries, agriculture, and energy."
     }
   ],
   "kpis": {
-    "totalValue": 137800000,
-    "activeProjects": 20,
-    "donorsEngaged": 18,
-    "completionRate": 12
+    "totalValue": 163800000,
+    "activeProjects": 24,
+    "donorsEngaged": 20,
+    "completionRate": 11
   },
   "recentUpdates": [
     {
+      "date": "2026-05-31",
+      "action": "Integrated Category D: Recognition Dividend ($26M)",
+      "user": "M2 Creative EPD"
+    },
+    {
       "date": "2026-05-30",
-      "action": "Pipeline Expanded to $137.8M Ecosystem Model",
+      "action": "Pipeline Expanded to Ecosystem Model",
       "user": "M2 Creative EPD"
     },
     {
