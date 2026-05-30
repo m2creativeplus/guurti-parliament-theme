@@ -105,12 +105,24 @@ export default function AIPOSGuurti() {
     fetch(dataSourceUrl)
       .then(res => res.json())
       .then((data: any) => {
-        const count = data.for_mahmoud?.length || 0;
-        const totalVal = data.for_mahmoud?.reduce((acc: number, curr: any) => acc + (parseFloat(curr.value_usd) || 0), 0) || 0;
+        // Handle both Google Sheets Apps Script schema and local latest.json schema
+        const projectsList = data.for_mahmoud || data.projects || [];
+        const count = projectsList.length;
+        
+        let totalVal = 0;
+        if (data.kpis && data.kpis.totalValue) {
+          totalVal = data.kpis.totalValue;
+        } else {
+          totalVal = projectsList.reduce((acc: number, curr: any) => {
+            const val = curr.value_usd || curr.amount || 0;
+            return acc + parseFloat(val);
+          }, 0);
+        }
+
         if (count > 0) {
            setStats(prev => {
              const newStats = [...prev];
-             newStats[0] = { ...newStats[0], value: count.toString(), sub: `$${(totalVal / 1000000).toFixed(2)}M total value` };
+             newStats[0] = { ...newStats[0], value: count.toString(), sub: `$${(totalVal / 1000000).toFixed(1)}M total value` };
              return newStats;
            });
         }
