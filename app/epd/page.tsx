@@ -193,11 +193,7 @@ const AIPOS_AGENTS = [
               <Target className="w-4 h-4" /> Opportunities
             </Link>
           </div>
-        </header>ms-center gap-2 bg-sl-gold-400 hover:bg-sl-gold-500 text-[#050507] px-5 py-2.5 rounded-xl font-bold transition-all text-sm shadow-lg shadow-sl-gold-400/20">
-            <Target className="w-4 h-4" /> Opportunities
-          </Link>
-        </div>
-      </header>
+        </header>
 
       <main className="max-w-7xl mx-auto p-8 space-y-16">
 
