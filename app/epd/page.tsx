@@ -98,12 +98,15 @@ export default function AIPOSGuurti() {
     link.rel = 'stylesheet';
     document.head.appendChild(link);
 
-    // Fetch live data from n8n scraping output
-    fetch('/data/latest.json')
+    // Target the Google Apps Script Web App URL first, fallback to static JSON if not set.
+    const dataSourceUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_JSON_URL || '/data/latest.json';
+
+    // Fetch live data natively (Zero-Rate-Limit Google Edge Cache Architecture)
+    fetch(dataSourceUrl)
       .then(res => res.json())
       .then((data: any) => {
         const count = data.for_mahmoud?.length || 0;
-        const totalVal = data.for_mahmoud?.reduce((acc: number, curr: any) => acc + (curr.value_usd || 0), 0) || 0;
+        const totalVal = data.for_mahmoud?.reduce((acc: number, curr: any) => acc + (parseFloat(curr.value_usd) || 0), 0) || 0;
         if (count > 0) {
            setStats(prev => {
              const newStats = [...prev];
@@ -112,7 +115,7 @@ export default function AIPOSGuurti() {
            });
         }
       })
-      .catch(err => console.error('Error fetching EPD stats:', err));
+      .catch(err => console.error('Error fetching Google Sheets EPD data:', err));
 
       return () => {
         document.head.removeChild(link);
