@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-05-29T05:14:48.007849",
+  "generated_at_human": "Friday, May 29 2026 at 05:14 AM",
+  "source": "AI-POS Global Institutional Pipeline",
+  "total": 5,
+  "total_value_usd": 242000000,
+  "stats": {
+    "high_priority": 3,
+    "relevant": 2,
+    "monitor": 0,
+    "by_type": {
+      "jobs": 0,
+      "tenders": 1,
+      "opportunities": 4
+    }
+  },
+  "for_mahmoud": [
+    {
+      "id": "eu-ndici-2026-102m",
+      "type": "opportunity",
+      "title": "State-building, Resilience and Education Funding Facility",
+      "organization": "European Union (EU NDICI)",
+      "location": "Somaliland / Somalia",
+      "deadline": "Rolling (2026-2027)",
+      "url": "https://international-partnerships.ec.europa.eu/countries/somalia_en",
+      "description": "A \u20ac102 million financing agreement focused on budget support, governance, state-building, and national development priorities.",
+      "value_usd": 110000000,
+      "mahmoud_score": 98,
+      "mahmoud_priority": "HIGH",
+      "mahmoud_reason": "Massive governance opportunity. Align directly with Guurti constitutional oversight mandate.",
+      "m2_score": 95,
+      "m2_priority": "HIGH",
+      "m2_reason": "Perfect match for Policy Visualizer and Institutional Design interventions.",
+      "overall_priority": "HIGH",
+      "matched_keywords": [
+        "Governance",
+        "State-building",
+        "Resilience",
+        "Budget Support",
+        "EU",
+        "NDICI"
+      ]
+    },
+    {
+      "id": "afdb-road-infra-76m",
+      "type": "tender",
+      "title": "Road Infrastructure Programme & Institutional Capacity Building",
+      "organization": "African Development Bank (AfDB)",
+      "location": "Somaliland (Zeila - Asha Addo)",
+      "deadline": "2026-08-15",
+      "url": "https://www.afdb.org/en/countries/east-africa/somalia",
+      "description": "Upgrading 15km road section from Zeila to Asha Addo, including local technical assistance and institutional support for cross-border trade.",
+      "value_usd": 76370000,
+      "mahmoud_score": 92,
+      "mahmoud_priority": "HIGH",
+      "mahmoud_reason": "Critical infrastructure for Somaliland trade sovereignty.",
+      "m2_score": 88,
+      "m2_priority": "HIGH",
+      "m2_reason": "Strategic communications and community engagement needed for infrastructure delivery.",
+      "overall_priority": "HIGH",
+      "matched_keywords": [
+        "Infrastructure",
+        "Trade",
+        "Institutional Support",
+        "AfDB",
+        "Zeila"
+      ]
+    },
+    {
+      "id": "wb-boost-you-2025",
+      "type": "opportunity",
+      "title": "BOOST-You: Social Protection & Youth Employment",
+      "organization": "World Bank",
+      "location": "Somaliland / Somalia",
+      "deadline": "2026-12-31",
+      "url": "https://projects.worldbank.org/en/projects-operations/project-detail/P178224",
+      "description": "Building Opportunities and Outcomes in Social Protection and Youth Employment. Cash transfers and civic engagement programs.",
+      "value_usd": 40000000,
+      "mahmoud_score": 85,
+      "mahmoud_priority": "RELEVANT",
+      "mahmoud_reason": "Aligns with human capital and youth representation policy goals.",
+      "m2_score": 80,
+      "m2_priority": "RELEVANT",
+      "m2_reason": "Opportunity for digital portals mapping youth employment tracking.",
+      "overall_priority": "RELEVANT",
+      "matched_keywords": [
+        "Youth Employment",
+        "Social Protection",
+        "World Bank"
+      ]
+    },
+    {
+      "id": "wb-damal-caafimaad-ext",
+      "type": "opportunity",
+      "title": "Damal Caafimaad Healthcare Service Delivery",
+      "organization": "World Bank",
+      "location": "Somaliland / Somalia",
+      "deadline": "2026-06-30",
+      "url": "https://projects.worldbank.org/en/projects-operations/project-detail/P172031",
+      "description": "Improving healthcare service delivery networks. Extended through mid-2026 to ensure capacity building of regional health administrations.",
+      "value_usd": 10000000,
+      "mahmoud_score": 75,
+      "mahmoud_priority": "RELEVANT",
+      "mahmoud_reason": "Monitoring oversight on regional health equity.",
+      "m2_score": 60,
+      "m2_priority": "MONITOR",
+      "m2_reason": "Standard service delivery, low requirement for strategic governance design.",
+      "overall_priority": "RELEVANT",
+      "matched_keywords": [
+        "Healthcare",
+        "World Bank",
+        "Service Delivery"
+      ]
+    },
+    {
+      "id": "usaid-democracy-gov-26",
+      "type": "opportunity",
+      "title": "Resilient and Democratic Societies Framework",
+      "organization": "USAID",
+      "location": "Somaliland / Somalia",
+      "deadline": "2026-09-30",
+      "url": "https://www.usaid.gov/somalia/democracy-human-rights-and-governance",
+      "description": "Funding focused on resilient democratic societies, local governance empowerment, and human rights advocacy.",
+      "value_usd": 5630000,
+      "mahmoud_score": 95,
+      "mahmoud_priority": "HIGH",
+      "mahmoud_reason": "High strategic alignment with Guurti decentralization and democratic advocacy.",
+      "m2_score": 85,
+      "m2_priority": "HIGH",
+      "m2_reason": "Perfect match for Policy Visualizer and local governance reporting.",
+      "overall_priority": "HIGH",
+      "matched_keywords": [
+        "Democracy",
+        "Governance",
+        "USAID",
+        "Local Empowerment"
+      ]
+    }
+  ]
+}

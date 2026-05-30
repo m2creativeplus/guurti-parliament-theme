@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-05-30T17:00:00.000Z",
+  "system": "GIEOS — Guurti International Engagement Operating System",
+  "version": "1.0.0",
+  "period": "2026-2030",
+  "parliamentary_networks": [
+    {
+      "id": "ipu",
+      "name": "Inter-Parliamentary Union",
+      "acronym": "IPU",
+      "tier": 1,
+      "strategic_value": "Very High",
+      "score": 95,
+      "benefits": ["Parliamentary diplomacy", "Committee networking", "Governance best practices", "Women parliamentarians programs", "Parliamentary innovation programs", "Legislative modernization support"],
+      "access_pathway": "Observer pathways, Conference participation, Technical events, Partnership programs",
+      "constraint": "Membership generally follows internationally recognized parliamentary structures",
+      "status": "ACTIVE_OUTREACH",
+      "next_action": "Submit observer membership application via Somaliland diplomatic missions",
+      "contact": "ipu-secretariat@ipu.org",
+      "priority": "HIGH"
+    },
+    {
+      "id": "cpa",
+      "name": "Commonwealth Parliamentary Association",
+      "acronym": "CPA",
+      "tier": 1,
+      "strategic_value": "Very High",
+      "score": 88,
+      "benefits": ["Committee strengthening", "Legislative training", "Parliamentary exchanges", "Staff development"],
+      "access_pathway": "Indirect partnerships through parliamentary cooperation programs",
+      "constraint": "Commonwealth membership required for full access",
+      "status": "RESEARCH",
+      "next_action": "Identify CPA technical programs open to non-member observer legislatures",
+      "contact": "hq@cpahq.org",
+      "priority": "HIGH"
+    },
+    {
+      "id": "wfd",
+      "name": "Westminster Foundation for Democracy",
+      "acronym": "WFD",
+      "tier": 1,
+      "strategic_value": "Very High",
+      "score": 92,
+      "benefits": ["Democratic governance", "Parliamentary strengthening", "Committee support", "Citizen engagement"],
+      "access_pathway": "Direct partnership programs linked to governance modernization objectives",
+      "constraint": "None — WFD has precedent of working with sub-national/unrecognized legislatures",
+      "status": "PRIORITY_TARGET",
+      "next_action": "Submit GIEOS Concept Note to WFD Africa Program",
+      "contact": "info@wfd.org",
+      "priority": "CRITICAL"
+    },
+    {
+      "id": "iidea",
+      "name": "International IDEA",
+      "acronym": "IDEA",
+      "tier": 1,
+      "strategic_value": "Very High",
+      "score": 90,
+      "benefits": ["Constitutional governance", "Legislative development", "Political inclusion", "Institutional reform"],
+      "access_pathway": "Technical cooperation on constitutional governance frameworks",
+      "constraint": "None — IDEA works across non-recognized governance contexts",
+      "status": "PRIORITY_TARGET",
+      "next_action": "Initiate constitutional governance mapping partnership request",
+      "contact": "info@idea.int",
+      "priority": "CRITICAL"
+    }
+  ],
+  "donors": [
+    {
+      "id": "undp",
+      "name": "United Nations Development Programme",
+      "acronym": "UNDP",
+      "tier": 1,
+      "primary_interests": ["Governance", "Institutions", "Legislative oversight", "Public administration"],
+      "guurti_alignment": ["Committee strengthening", "Digital parliament", "Institutional capacity"],
+      "estimated_value_usd": 15000000,
+      "access_window": "2026 Q3",
+      "status": "ACTIVE_ENGAGEMENT",
+      "priority": "CRITICAL",
+      "score": 96
+    },
+    {
+      "id": "world-bank",
+      "name": "World Bank",
+      "acronym": "WB",
+      "tier": 1,
+      "primary_interests": ["Public sector reform", "Accountability", "Service delivery", "Digital government"],
+      "guurti_alignment": ["Parliamentary budget office", "PFM oversight", "Digital transformation"],
+      "estimated_value_usd": 40000000,
+      "access_window": "Rolling",
+      "status": "MONITORING",
+      "priority": "HIGH",
+      "score": 88
+    },
+    {
+      "id": "afdb",
+      "name": "African Development Bank",
+      "acronym": "AfDB",
+      "tier": 1,
+      "primary_interests": ["Governance", "Economic transformation", "Institutional resilience"],
+      "guurti_alignment": ["Public financial management oversight", "Infrastructure governance"],
+      "estimated_value_usd": 76370000,
+      "access_window": "2026 Q2",
+      "status": "TENDER_OPEN",
+      "priority": "CRITICAL",
+      "score": 92
+    },
+    {
+      "id": "isdb",
+      "name": "Islamic Development Bank",
+      "acronym": "IsDB",
+      "tier": 1,
+      "primary_interests": ["Institutional development", "Human capital", "Digital transformation"],
+      "guurti_alignment": ["Traditional governance dialogue", "Islamic governance frameworks"],
+      "estimated_value_usd": 8000000,
+      "access_window": "2026 Q4",
+      "status": "RESEARCH",
+      "priority": "HIGH",
+      "score": 83
+    }
+  ],
+  "diplomatic_targets": [
+    {
+      "id": "us",
+      "country": "United States",
+      "priority_score": 9,
+      "focus_areas": ["Legislative exchanges", "Research cooperation", "Governance dialogue"],
+      "key_contacts": [
+        {"name": "House Foreign Affairs Committee", "type": "Congressional"},
+        {"name": "Senate Foreign Relations Committee", "type": "Congressional"},
+        {"name": "Congressional Research Service", "type": "Research"}
+      ],
+      "status": "ACTIVE_OUTREACH",
+      "next_action": "Request congressional visit delegation to Hargeisa"
+    },
+    {
+      "id": "israel",
+      "country": "Israel",
+      "priority_score": 8.5,
+      "focus_areas": ["Digital government", "Water governance", "Innovation policy", "Legislative technology"],
+      "key_contacts": [
+        {"name": "Knesset", "type": "Legislature"},
+        {"name": "Israel Democracy Institute", "type": "Think Tank"}
+      ],
+      "status": "FRIENDSHIP_GROUP",
+      "next_action": "Formalize Guurti-Knesset bilateral agreement on digital parliament"
+    },
+    {
+      "id": "uae",
+      "country": "United Arab Emirates",
+      "priority_score": 10,
+      "focus_areas": ["Smart government", "Digital governance", "AI governance", "Public administration"],
+      "key_contacts": [
+        {"name": "Federal National Council", "type": "Legislature"},
+        {"name": "UAE Ministry of AI", "type": "Government"}
+      ],
+      "status": "PRIORITY_TARGET",
+      "next_action": "Submit Guurti Digital Transformation Partnership Proposal"
+    },
+    {
+      "id": "saudi",
+      "country": "Saudi Arabia",
+      "priority_score": 9,
+      "focus_areas": ["Governance modernization", "Institutional development", "Strategic partnerships"],
+      "key_contacts": [
+        {"name": "Shura Council", "type": "Legislature"},
+        {"name": "Saudi Vision 2030 Office", "type": "Government"}
+      ],
+      "status": "RESEARCH",
+      "next_action": "Prepare bilateral strategic governance partnership brief"
+    }
+  ],
+  "fundable_projects": [
+    {
+      "id": "digital-guurti",
+      "title": "Digital Guurti Transformation Program",
+      "code": "DGTP-001",
+      "funding_potential": "Very High",
+      "estimated_usd": 4500000,
+      "donor_interest": "Very High",
+      "components": ["E-parliament platform", "Committee management system", "Legislative database", "Document management", "Digital archives"],
+      "status": "CONCEPT_NOTE_READY",
+      "lead_donors": ["UNDP", "WFD", "EU NDICI"],
+      "timeline": "2026-2028",
+      "score": 97
+    },
+    {
+      "id": "knowledge-center",
+      "title": "Somaliland Traditional Governance Knowledge Center",
+      "code": "TKGC-002",
+      "funding_potential": "High",
+      "estimated_usd": 1200000,
+      "donor_interest": "High",
+      "components": ["Guurti history documentation", "Conflict resolution database", "Customary governance archive", "Peacebuilding models collection"],
+      "status": "RESEARCH_PHASE",
+      "lead_donors": ["Universities", "Think tanks", "Peacebuilding organizations"],
+      "timeline": "2026-2027",
+      "score": 82
+    },
+    {
+      "id": "prs",
+      "title": "Parliamentary Research Service",
+      "code": "PRS-003",
+      "funding_potential": "Very High",
+      "estimated_usd": 2800000,
+      "donor_interest": "Very High",
+      "components": ["Legislative analysis unit", "Economic analysis division", "Policy briefs production", "Research support center"],
+      "status": "CONCEPT_NOTE_READY",
+      "lead_donors": ["UNDP", "WFD", "UK FCDO"],
+      "timeline": "2026-2028",
+      "score": 94
+    },
+    {
+      "id": "pbo",
+      "title": "Parliamentary Budget Office",
+      "code": "PBO-004",
+      "funding_potential": "Very High",
+      "estimated_usd": 3600000,
+      "donor_interest": "Very High",
+      "components": ["Budget scrutiny unit", "Fiscal analysis division", "Revenue forecasting system", "Public expenditure review"],
+      "status": "DRAFTING",
+      "lead_donors": ["World Bank", "IMF", "AfDB"],
+      "timeline": "2026-2029",
+      "score": 95
+    },
+    {
+      "id": "cohesion-observatory",
+      "title": "National Social Cohesion Observatory",
+      "code": "NSCO-005",
+      "funding_potential": "Very High",
+      "estimated_usd": 5200000,
+      "donor_interest": "Very High",
+      "components": ["Conflict monitoring system", "Community dialogue platform", "Early warning systems", "Peacebuilding metrics dashboard"],
+      "status": "CONCEPT_NOTE_READY",
+      "lead_donors": ["USAID", "UN Peacebuilding Fund", "EU"],
+      "timeline": "2026-2030",
+      "score": 93
+    }
+  ],
+  "kpi_summary": {
+    "total_fundable_projects": 5,
+    "estimated_total_pipeline_usd": 17300000,
+    "active_diplomatic_targets": 4,
+    "parliamentary_networks_targeted": 4,
+    "priority_donors": 4,
+    "action_items_90_day": 12,
+    "agents_active": 10
+  }
+}
