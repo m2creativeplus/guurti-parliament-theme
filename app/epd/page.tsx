@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useQuery } from 'convex/react';
+import { api } from '@/convex/_generated/api';
 import './aipos.css';
 
 // Move the data to constant arrays to be rendered by React map
@@ -90,6 +92,7 @@ export default function AIPOSGuurti() {
   const [currentView, setCurrentView] = useState('dashboard');
   const [activeAgents, setActiveAgents] = useState<string[]>([]);
   const [stats, setStats] = useState(INITIAL_STATS);
+  const convexData = useQuery(api.projects.getEcosystemData);
 
   useEffect(() => {
     // Inject the fonts required by the AI-POS UI
@@ -98,41 +101,24 @@ export default function AIPOSGuurti() {
     link.rel = 'stylesheet';
     document.head.appendChild(link);
 
-    // Target the Google Apps Script Web App URL first, fallback to static JSON if not set.
-    const dataSourceUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_JSON_URL || '/data/latest.json';
-
-    // Fetch live data natively (Zero-Rate-Limit Google Edge Cache Architecture)
-    fetch(dataSourceUrl)
-      .then(res => res.json())
-      .then((data: any) => {
-        // Handle both Google Sheets Apps Script schema and local latest.json schema
-        const projectsList = data.for_mahmoud || data.projects || [];
-        const count = projectsList.length;
-        
-        let totalVal = 0;
-        if (data.kpis && data.kpis.totalValue) {
-          totalVal = data.kpis.totalValue;
-        } else {
-          totalVal = projectsList.reduce((acc: number, curr: any) => {
-            const val = curr.value_usd || curr.amount || 0;
-            return acc + parseFloat(val);
-          }, 0);
-        }
-
-        if (count > 0) {
-           setStats(prev => {
-             const newStats = [...prev];
-             newStats[0] = { ...newStats[0], value: count.toString(), sub: `$${(totalVal / 1000000).toFixed(1)}M total value` };
-             return newStats;
-           });
-        }
-      })
-      .catch(err => console.error('Error fetching Google Sheets EPD data:', err));
-
-      return () => {
-        document.head.removeChild(link);
+    // Fetch live data natively using Convex WebSockets
+    if (convexData && convexData.projects) {
+      const count = convexData.projects.length;
+      const totalVal = convexData.kpis?.totalValue || 0;
+      
+      if (count > 0) {
+        setStats(prev => {
+          const newStats = [...prev];
+          newStats[0] = { ...newStats[0], value: count.toString(), sub: `$${(totalVal / 1000000).toFixed(1)}M total value` };
+          return newStats;
+        });
       }
-  }, []);
+    }
+
+    return () => {
+      document.head.removeChild(link);
+    }
+  }, [convexData]);
 
   const activateAgent = (id: string, name: string) => {
     alert(`🤖 Activating ${name}\n\nAgent is now running. New discoveries will be added to the intelligence feed.`);

@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Lexend_Deca, Krub, Cairo } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { AccessibilityToolbar } from "@/components/accessibility-toolbar"
+import { ConvexClientProvider } from "@/components/ConvexClientProvider"
 import "./globals.css"
 
 const lexendDeca = Lexend_Deca({
@@ -57,9 +58,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        {children}
-        <AccessibilityToolbar />
-        <Analytics />
+        <ConvexClientProvider>
+          {children}
+          <AccessibilityToolbar />
+          <Analytics />
+        </ConvexClientProvider>
       </body>
     </html>
   )
